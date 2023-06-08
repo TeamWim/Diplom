@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1 class="header">monolithic architecture</h1>
+<div class="block2">
+
+    <form class="form" onsubmit="sendPostRequest(event)">
+        <input class="input" id="countInput" placeholder="student count"/>
+        <button class="button">Create Student</button>
+    </form>
+    <div class="time" id="executionTime">Execution time to create student:</div>
+
+    <form class="form" onsubmit="statisticGenerate(event)">
+        <button class="button">Create Statistic</button>
+    </form>
+    <br>
+    <form class="form" onsubmit="getStatistic(event)">
+        <button class="button">Get Statistik for years</button>
+    </form>
+
+    <div class="time" id="executionTimeStatistic">Execution time create statistic:</div>
+
+
+    <form class="form" onsubmit="getYear(event)">
+        <button class="button">get Year</button>
+    </form>
+    <br>
+    <div class="time" id="executionTimeYer">Execution time:</div>
+    <div class="time" id="executionYer"></div>
+</div>
+
+<div class="table-container">
+    <table class="table">
+        <thead class="thead">
+        <tr>
+            <th class="th">Year</th>
+            <th class="th">Average Reversibility</th>
+        </tr>
+        </thead>
+        <tbody class="tbody" id="tableBody"></tbody>
+    </table>
+</div>
+<div class="table-container2">
+    <table class="table">
+        <thead class="thead">
+        <tr>
+            <th class="th">Year</th>
+            <th class="th">Average Reversibility</th>
+        </tr>
+        </thead>
+        <tbody class="tbody" id="tableBody2"></tbody>
+    </table>
+</div>
+<a href="index.html">to microcervice</a>
+<script src="monolit.js"></script>
+</body>
+</html>
